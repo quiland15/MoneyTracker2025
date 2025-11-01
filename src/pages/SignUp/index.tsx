@@ -1,10 +1,18 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Header from '../../components/molecules/Header';
+import Gap from '../../components/atoms/Gap';
+import Button from '../../components/atoms/Button';
+import Profile from '../../assets/null-photo.svg'
 
 const SignUp = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Money Tracker</Text>
+        <Header label="Sign Up" flexdirection="row"/>
+        <View style={styles.contentWrapper}>
+            <Gap/>
+            <Button borderradius={90/2} lebar={90} tinggi={90} color='white' label={<Profile />}/>
+        </View>
     </View>
   );
 };
@@ -12,14 +20,17 @@ const SignUp = () => {
 export default SignUp;
 
 const styles = StyleSheet.create({
-  container: {
+ container: {
     flex: 1,
-    backgroundColor: '#02CF8E',
-    justifyContent: 'center',
-    alignItems: 'center',
+    paddingHorizontal: 24,
+    paddingTop: 26,
   },
-  title: {
-    fontFamily: 'Poppins-Medium',
-    fontSize: 32,
+  contentWrapper: {
+    marginTop: 24,
+    backgroundColor: '#FFFFFF',
+    flex: 1,
+    paddingHorizontal: 24,
+    paddingTop: 26,
+    alignItems: 'center'
   },
 });
