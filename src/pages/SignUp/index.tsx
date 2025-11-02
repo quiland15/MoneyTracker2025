@@ -16,6 +16,7 @@ const SignUp = () => {
             <TextInput label="Full Name" placeholder="Type your full name"/>
             <TextInput label="Email Address" placeholder="Type your email address"/>
             <TextInput label="Password" placeholder="Type your password"/>
+            <Button lebar={300} label="Continue"/>
         </View>
     </View>
   );
