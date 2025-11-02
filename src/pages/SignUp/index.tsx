@@ -4,6 +4,7 @@ import Header from '../../components/molecules/Header';
 import Gap from '../../components/atoms/Gap';
 import Button from '../../components/atoms/Button';
 import Profile from '../../assets/null-photo.svg'
+import TextInput from '../../components/molecules/TextInput';
 
 const SignUp = () => {
   return (
@@ -12,6 +13,9 @@ const SignUp = () => {
         <View style={styles.contentWrapper}>
             <Gap/>
             <Button borderradius={90/2} lebar={90} tinggi={90} color='white' label={<Profile />}/>
+            <TextInput label="Full Name" placeholder="Type your full name"/>
+            <TextInput label="Email Address" placeholder="Type your email address"/>
+            <TextInput label="Password" placeholder="Type your password"/>
         </View>
     </View>
   );
